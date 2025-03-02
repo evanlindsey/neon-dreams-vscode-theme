@@ -1,0 +1,639 @@
+{
+  "name": "Neon Dreams: Nightfall",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1C1624", // Purple-brown editor, slightly lighter
+    "editor.foreground": "#FFFFFF", // Pure white, max contrast
+    "activityBarBadge.background": "#FF69B4", // Hot pink badges, bold
+    "activityBarBadge.foreground": "#000000", // Black text, sharp
+    "sideBarTitle.foreground": "#FF1493", // Deep pink titles, vibrant
+    "activityBar.background": "#1A1422", // Darkest purple-brown, activity bar
+    "activityBar.foreground": "#FFFF00", // Yellow icons, screaming
+    "sideBar.background": "#221B2A", // Lightest purple-brown, explorer
+    "sideBar.foreground": "#00FFFF", // Cyan base for explorer
+    "statusBar.background": "#FF1493", // Deep pink status, neon return
+    "statusBar.foreground": "#FFFFFF", // White text, stark contrast
+    "editorLineNumber.foreground": "#706080", // Muted purple-gray, subtle
+    "editorLineNumber.activeForeground": "#FF00FF", // Magenta active line, wild
+    "editorCursor.foreground": "#FFFF00", // Yellow cursor, vivid
+    "editor.selectionBackground": "#FF149360", // Deep pink selection, glowing
+    "editor.hoverHighlightBackground": "#00FF0060", // Green hover, fresh chaos
+    "editor.wordHighlightBackground": "#FF69B460", // Hot pink word highlight, bold
+    "editor.findMatchHighlightBackground": "#FFFF0080", // Yellow match, blazing
+    "editorBracketMatch.background": "#00FFFF80", // Cyan brackets, clear
+    "editorBracketMatch.border": "#FF1493", // Deep pink border, striking
+    "tab.activeBackground": "#1C1624", // Match editor, active tab
+    "tab.inactiveBackground": "#1A1422", // Darker inactive tabs
+    "tab.activeForeground": "#FFFFFF", // White active tab text
+    "tab.inactiveForeground": "#A080B0", // Muted purple inactive text
+    "list.activeSelectionBackground": "#221B2A", // Lightest purple-brown selection
+    "list.activeSelectionForeground": "#FFFF00", // Yellow selected files
+    "list.inactiveSelectionForeground": "#00FFFF", // Cyan unselected files
+    "list.hoverBackground": "#332A40", // Hover in explorer, subtle shift
+    "list.hoverForeground": "#FF69B4", // Hot pink hover text, popping
+
+    // Terminal Section - Consistent Purple-Brown
+    "terminal.background": "#1A1422", // Darkest purple-brown, terminal
+    "terminal.foreground": "#FFFF00", // Yellow user input, vivid
+    "terminalCursor.background": "#FF00FF", // Magenta cursor backdrop
+    "terminalCursor.foreground": "#FFFF00", // Yellow cursor, wild
+    "terminal.ansiBlack": "#000000", // Pure black, void
+    "terminal.ansiBlue": "#00FFFF", // Cyan blue, prompt base
+    "terminal.ansiCyan": "#66FFFF", // Brighter cyan, electric
+    "terminal.ansiGreen": "#00FF00", // Neon green, raw
+    "terminal.ansiMagenta": "#FF00FF", // Magenta, bold
+    "terminal.ansiRed": "#FF1493", // Deep pink-red, vibrant
+    "terminal.ansiWhite": "#FFFFFF", // Blinding white, stark
+    "terminal.ansiYellow": "#FFFF00", // Screaming yellow, massive
+    "terminal.ansiBrightBlack": "#504060", // Purple-gray, gritty
+    "terminal.ansiBrightBlue": "#33FFFF", // Intense cyan
+    "terminal.ansiBrightCyan": "#99FFFF", // Pale cyan, shimmering
+    "terminal.ansiBrightGreen": "#33FF33", // Brighter green, vivid
+    "terminal.ansiBrightMagenta": "#FF66FF", // Hotter magenta, wild
+    "terminal.ansiBrightRed": "#FF69B4", // Hot pink, popping
+    "terminal.ansiBrightWhite": "#F0F0F0", // Off-white, harsh
+    "terminal.ansiBrightYellow": "#FFFF66" // Brighter yellow, colossal
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#706080" // Muted purple-gray, subtle
+      }
+    },
+    {
+      "name": "Variables (TypeScript, Angular)",
+      "scope": ["variable", "string constant.other.placeholder"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan vars, TS core
+      }
+    },
+    {
+      "name": "Colors",
+      "scope": ["constant.other.color"],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan, CSS clarity
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red errors, vibrant
+      }
+    },
+    {
+      "name": "Keyword, Storage (TS Keywords)",
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan keywords, Angular backbone
+      }
+    },
+    {
+      "name": "Operator, Misc",
+      "scope": [
+        "keyword.control",
+        "constant.other.color",
+        "punctuation",
+        "meta.tag",
+        "punctuation.definition.tag",
+        "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution"
+      ],
+      "settings": {
+        "foreground": "#FFFF66" // Brighter yellow operators, vivid
+      }
+    },
+    {
+      "name": "Tag (HTML in Angular)",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag.sgml",
+        "markup.deleted.git_gutter"
+      ],
+      "settings": {
+        "foreground": "#00FF00" // Neon green tags, HTML standout
+      }
+    },
+    {
+      "name": "Function Call (TS Functions)",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call entity.name.function",
+        "variable.function",
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#FF69B4" // Hot pink function calls, distinct
+      }
+    },
+    {
+      "name": "Function Arguments",
+      "scope": ["variable.parameter"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan args, contrast with pink calls
+      }
+    },
+    {
+      "name": "Block Level Variables",
+      "scope": ["meta.block variable.other"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan block vars, TS scope
+      }
+    },
+    {
+      "name": "Other Variable, String Link",
+      "scope": ["support.other.variable", "string.other.link"],
+      "settings": {
+        "foreground": "#FFFF00" // Screaming yellow links, popping
+      }
+    },
+    {
+      "name": "Number, Constant, Embedded",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "support.constant",
+        "constant.character",
+        "constant.escape",
+        "keyword.other.unit",
+        "keyword.other"
+      ],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan constants, clear
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "scope": [
+        "string",
+        "constant.other.symbol",
+        "constant.other.key",
+        "entity.other.inherited-class",
+        "markup.heading",
+        "markup.inserted.git_gutter",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red strings, wild contrast
+      }
+    },
+    {
+      "name": "Class, Support (TS Classes)",
+      "scope": [
+        "entity.name",
+        "support.type",
+        "support.class",
+        "support.other.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "markup.changed.git_gutter",
+        "support.type.sys-types"
+      ],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan classes, Angular components
+      }
+    },
+    {
+      "name": "Entity Types",
+      "scope": ["support.type"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan types, TS precision
+      }
+    },
+    {
+      "name": "CSS Class and Support (Angular Styles)",
+      "scope": [
+        "source.css support.type.property-name",
+        "source.sass support.type.property-name",
+        "source.scss support.type.property-name",
+        "source.less support.type.property-name",
+        "source.stylus support.type.property-name",
+        "source.postcss support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#33FF33" // Brighter green CSS, vivid styles
+      }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": [
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js"
+      ],
+      "settings": {
+        "foreground": "#FF00FF" // Magenta sub-methods, pink flair
+      }
+    },
+    {
+      "name": "Language methods",
+      "scope": ["variable.language"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FFFF66" // Brighter yellow lang vars, popping
+      }
+    },
+    {
+      "name": "entity.name.method.js",
+      "scope": ["entity.name.method.js"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FF69B4" // Hot pink JS methods, wild
+      }
+    },
+    {
+      "name": "meta.method.js",
+      "scope": [
+        "meta.class-method.js entity.name.function.js",
+        "variable.function.constructor"
+      ],
+      "settings": {
+        "foreground": "#FF69B4" // Hot pink constructors, contrast
+      }
+    },
+    {
+      "name": "Attributes (HTML Attributes in Angular)",
+      "scope": ["entity.other.attribute-name"],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan attributes, clear
+      }
+    },
+    {
+      "name": "HTML Attributes",
+      "scope": [
+        "text.html.basic entity.other.attribute-name.html",
+        "text.html.basic entity.other.attribute-name"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#00FF00" // Neon green HTML attributes, vivid
+      }
+    },
+    {
+      "name": "CSS Classes",
+      "scope": ["entity.other.attribute-name.class"],
+      "settings": {
+        "foreground": "#33FF33" // Brighter green CSS classes, styles pop
+      }
+    },
+    {
+      "name": "CSS ID's",
+      "scope": ["source.sass keyword.control"],
+      "settings": {
+        "foreground": "#FF00FF" // Magenta IDs, pink accent
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": ["markup.inserted"],
+      "settings": {
+        "foreground": "#00FF00" // Neon green inserts, fresh
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": ["markup.deleted"],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red deletes, vibrant
+      }
+    },
+    {
+      "name": "Changed",
+      "scope": ["markup.changed"],
+      "settings": {
+        "foreground": "#FFFF00" // Screaming yellow changes, vivid
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan regex, TS precision
+      }
+    },
+    {
+      "name": "Escape Characters",
+      "scope": ["constant.character.escape"],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan escapes, clear
+      }
+    },
+    {
+      "name": "URL",
+      "scope": ["*url*", "*link*", "*uri*"],
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#FFFF00" // Yellow URLs, popping
+      }
+    },
+    {
+      "name": "Decorators (Angular Decorators)",
+      "scope": [
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FF69B4" // Hot pink decorators, wild contrast
+      }
+    },
+    {
+      "name": "ES7 Bind Operator",
+      "scope": [
+        "source.js constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FF66FF" // Hotter magenta bind ops, pink flair
+      }
+    },
+    {
+      "name": "Object Key - General",
+      "scope": [
+        "meta.objectliteral meta.object.member",
+        "variable.object.property",
+        "support.type.property-name",
+        "meta.object-literal.key"
+      ],
+      "settings": {
+        "foreground": "#33FF33" // Brighter green keys, distinct
+      }
+    },
+    {
+      "name": "Object Value",
+      "scope": [
+        "meta.objectliteral meta.object.member string",
+        "meta.objectliteral meta.object.member constant",
+        "meta.objectliteral meta.object.member variable"
+      ],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red values, high contrast
+      }
+    },
+    {
+      "name": "JSON Key - Level 0",
+      "scope": [
+        "source.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#33FF33" // Brighter green JSON keys, distinct
+      }
+    },
+    {
+      "name": "JSON Value - Level 0",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json"
+      ],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red JSON values, contrast
+      }
+    },
+    {
+      "name": "JSON Key - Level 1",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan, depth
+      }
+    },
+    {
+      "name": "JSON Key - Level 2",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FFFF00" // Screaming yellow, vivid
+      }
+    },
+    {
+      "name": "JSON Key - Level 3",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#00FF00" // Neon green, fresh
+      }
+    },
+    {
+      "name": "JSON Key - Level 4",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FF00FF" // Magenta, pink accent
+      }
+    },
+    {
+      "name": "JSON Key - Level 5",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FF69B4" // Hot pink, wild
+      }
+    },
+    {
+      "name": "JSON Key - Level 6",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#33FF33" // Brighter green, vivid
+      }
+    },
+    {
+      "name": "JSON Key - Level 7",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#99FFFF" // Pale cyan, shimmering
+      }
+    },
+    {
+      "name": "JSON Key - Level 8",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FFFF66" // Brighter yellow, popping
+      }
+    },
+    {
+      "name": "Markup - Plain (Angular Template Text)",
+      "scope": [
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF" // White template text, stark
+      }
+    },
+    {
+      "name": "Markup - Raw Inline",
+      "scope": ["text.html.markdown markup.inline.raw.markdown"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan inline, glowing
+      }
+    },
+    {
+      "name": "Markup - Raw Inline Punctuation",
+      "scope": [
+        "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
+      ],
+      "settings": {
+        "foreground": "#706080" // Muted purple-gray punctuation
+      }
+    },
+    {
+      "name": "Markup - Heading",
+      "scope": [
+        "markdown.heading",
+        "markup.heading | markup.heading entity.name",
+        "markup.heading.markdown punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#FF00FF" // Magenta headings, pink power
+      }
+    },
+    {
+      "name": "Markup - Italic",
+      "scope": ["markup.italic"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#00FF00" // Neon green italics, vivid
+      }
+    },
+    {
+      "name": "Markup - Bold",
+      "scope": ["markup.bold", "markup.bold string"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#FFFF00" // Screaming yellow bold, popping
+      }
+    },
+    {
+      "name": "Markup - Bold-Italic",
+      "scope": [
+        "markup.bold markup.italic",
+        "markup.italic markup.bold",
+        "markup.quote markup.bold",
+        "markup.bold markup.italic string",
+        "markup.italic markup.bold string",
+        "markup.quote markup.bold string"
+      ],
+      "settings": {
+        "fontStyle": "bold italic",
+        "foreground": "#FFFF66" // Brighter yellow bold-italic, vivid
+      }
+    },
+    {
+      "name": "Markup - Underline",
+      "scope": ["markup.underline"],
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#FF69B4" // Hot pink underline, wild contrast
+      }
+    },
+    {
+      "name": "Markup - Blockquote",
+      "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
+      "settings": {
+        "foreground": "#706080" // Muted purple-gray blockquote
+      }
+    },
+    {
+      "name": "Markup - Quote",
+      "scope": ["markup.quote"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FF1493" // Deep pink-red quotes, bold
+      }
+    },
+    {
+      "name": "Markup - Link",
+      "scope": ["string.other.link.title.markdown"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan links, glowing
+      }
+    },
+    {
+      "name": "Markup - Link Description",
+      "scope": ["string.other.link.description.title.markdown"],
+      "settings": {
+        "foreground": "#FFFF00" // Screaming yellow descriptions, vivid
+      }
+    },
+    {
+      "name": "Markup - Link Anchor",
+      "scope": ["constant.other.reference.link.markdown"],
+      "settings": {
+        "foreground": "#66FFFF" // Brighter cyan anchors
+      }
+    },
+    {
+      "name": "Markup - Raw Block",
+      "scope": ["markup.raw.block"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan raw blocks, electric
+      }
+    },
+    {
+      "name": "Markup - Raw Block Fenced",
+      "scope": ["markup.raw.block.fenced.markdown"],
+      "settings": {
+        "foreground": "#00FF00" // Neon green fences, vivid
+      }
+    },
+    {
+      "name": "Markup - Fenced Code Block",
+      "scope": ["punctuation.definition.fenced.markdown"],
+      "settings": {
+        "foreground": "#FF1493" // Deep pink-red fences, pink flair
+      }
+    },
+    {
+      "name": "Markup - Fenced Code Block Variable",
+      "scope": [
+        "markup.raw.block.fenced.markdown",
+        "variable.language.fenced.markdown",
+        "punctuation.section.class.end"
+      ],
+      "settings": {
+        "foreground": "#FFFFFF" // White fenced vars, stark
+      }
+    },
+    {
+      "name": "Markup - Fenced Language",
+      "scope": ["variable.language.fenced.markdown"],
+      "settings": {
+        "foreground": "#FF00FF" // Magenta lang tags, pink accent
+      }
+    },
+    {
+      "name": "Markup - Separator",
+      "scope": ["meta.separator"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#FFFF00" // Screaming yellow separators, vivid
+      }
+    },
+    {
+      "name": "Markup - Table",
+      "scope": ["markup.table"],
+      "settings": {
+        "foreground": "#00FFFF" // Cyan tables, glowing grids
+      }
+    }
+  ]
+}

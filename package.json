@@ -1,0 +1,37 @@
+{
+  "name": "neon-dreams-vscode",
+  "displayName": "Neon Dreams",
+  "description": "A theme that fuses retro synthwave flair with coding finesse.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlindsey/neon-dreams.git"
+  },
+  "scripts": {
+    "vsce:package": "vsce package",
+    "vsce:publish": "vsce publish"
+  },
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Neon Dreams: Nightfall",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon-dreams-dark-color-theme.json"
+      },
+      {
+        "label": "Neon Dreams: Daybreak",
+        "uiTheme": "vs",
+        "path": "./themes/neon-dreams-light-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
+}

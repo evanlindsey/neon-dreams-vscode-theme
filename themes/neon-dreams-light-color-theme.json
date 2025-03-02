@@ -1,0 +1,639 @@
+{
+  "name": "Neon Dreams: Daybreak",
+  "type": "light",
+  "colors": {
+    "editor.background": "#F2E8FF", // Pale purple-white, soft and bright
+    "editor.foreground": "#1A0F26", // Even darker purple, max contrast
+    "activityBarBadge.background": "#AD1457", // Darkest deep pink badges, bold
+    "activityBarBadge.foreground": "#FFFFFF", // White text, clean
+    "sideBarTitle.foreground": "#880E4F", // Darkest rich pink titles, vibrant
+    "activityBar.background": "#E8DEFF", // Slightly darker purple-white, activity bar
+    "activityBar.foreground": "#F57C00", // Darkest amber icons, warm
+    "sideBar.background": "#EADDF9", // Middle purple-white, explorer
+    "sideBar.foreground": "#01579B", // Darkest deep cyan base for explorer
+    "statusBar.background": "#880E4F", // Darkest rich pink status, neon punch
+    "statusBar.foreground": "#FFFFFF", // White text, sharp
+    "editorLineNumber.foreground": "#7E57C2", // Darker muted purple, subtle
+    "editorLineNumber.activeForeground": "#AD1457", // Darkest deep pink active line, wild
+    "editorCursor.foreground": "#F57C00", // Darkest amber cursor, warm
+    "editor.selectionBackground": "#AD145740", // Darkest deep pink selection, translucent
+    "editor.hoverHighlightBackground": "#007D3440", // Darkest green hover, fresh
+    "editor.wordHighlightBackground": "#880E4F40", // Darkest rich pink word highlight, bold
+    "editor.findMatchHighlightBackground": "#F57C0060", // Darkest amber match, warm glow
+    "editorBracketMatch.background": "#01579B60", // Darkest deep cyan brackets, clear
+    "editorBracketMatch.border": "#AD1457", // Darkest deep pink border, striking
+    "tab.activeBackground": "#F2E8FF", // Match editor, active tab
+    "tab.inactiveBackground": "#E8DEFF", // Darker inactive tabs
+    "tab.activeForeground": "#1A0F26", // Even darker purple active tab text
+    "tab.inactiveForeground": "#7E57C2", // Darker muted purple-gray inactive text
+    "list.activeSelectionBackground": "#EADDF9", // Middle purple-white selection
+    "list.activeSelectionForeground": "#F57C00", // Darkest amber selected files
+    "list.inactiveSelectionForeground": "#01579B", // Darkest deep cyan unselected files
+    "list.hoverBackground": "#D9CCF0", // Hover in explorer, subtle shift
+    "list.hoverForeground": "#AD1457", // Darkest deep pink hover text, popping
+
+    // Terminal Section - Darkest Neons
+    "terminal.background": "#E8DEFF", // Darker purple-white, terminal
+    "terminal.foreground": "#F57C00", // Darkest amber input, warm
+    "terminalCursor.background": "#AD1457", // Darkest deep pink backdrop
+    "terminalCursor.foreground": "#F57C00", // Darkest amber cursor, vivid
+    "terminal.ansiBlack": "#1A0F26", // Even darker purple, deep
+    "terminal.ansiBlue": "#01579B", // Darkest deep cyan blue, prompt base
+    "terminal.ansiCyan": "#0277BD", // Darkest brighter cyan, electric
+    "terminal.ansiGreen": "#007D34", // Darkest green, crisp
+    "terminal.ansiMagenta": "#AD1457", // Darkest deep pink, bold
+    "terminal.ansiRed": "#C2185B", // Darkest rich pink-red, vibrant
+    "terminal.ansiWhite": "#FFFFFF", // Pure white, clean
+    "terminal.ansiYellow": "#F57C00", // Darkest amber, sunny
+    "terminal.ansiBrightBlack": "#7E57C2", // Darker muted purple-gray, gritty
+    "terminal.ansiBrightBlue": "#0277BD", // Darkest intense cyan
+    "terminal.ansiBrightCyan": "#0288D1", // Darkest pale cyan, shimmering
+    "terminal.ansiBrightGreen": "#00A843", // Darkest brighter green, vivid
+    "terminal.ansiBrightMagenta": "#C2185B", // Darkest rich pink, wild
+    "terminal.ansiBrightRed": "#D81B60", // Darkest brighter pink-red, popping
+    "terminal.ansiBrightWhite": "#F0F0F0", // Off-white, soft
+    "terminal.ansiBrightYellow": "#FF8F00" // Darkest brighter amber, warm glow
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#7E57C2" // Darker muted purple-gray, subtle
+      }
+    },
+    {
+      "name": "Variables (TypeScript, Angular)",
+      "scope": ["variable", "string constant.other.placeholder"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan vars, TS core
+      }
+    },
+    {
+      "name": "Colors",
+      "scope": ["constant.other.color"],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan, CSS clarity
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red errors, vibrant
+      }
+    },
+    {
+      "name": "Keyword, Storage (TS Keywords)",
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan keywords, Angular backbone
+      }
+    },
+    {
+      "name": "Operator, Misc",
+      "scope": [
+        "keyword.control",
+        "constant.other.color",
+        "punctuation",
+        "meta.tag",
+        "punctuation.definition.tag",
+        "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution"
+      ],
+      "settings": {
+        "foreground": "#FF8F00" // Darkest brighter amber operators, vivid
+      }
+    },
+    {
+      "name": "Tag (HTML in Angular)",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag.sgml",
+        "markup.deleted.git_gutter"
+      ],
+      "settings": {
+        "foreground": "#007D34" // Darkest green tags, HTML standout
+      }
+    },
+    {
+      "name": "Function Call (TS Functions)",
+      "scope": [
+        "entity.name.function",
+        "meta.function-call entity.name.function",
+        "variable.function",
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink function calls, distinct
+      }
+    },
+    {
+      "name": "Function Arguments",
+      "scope": ["variable.parameter"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan args, contrast with pink calls
+      }
+    },
+    {
+      "name": "Block Level Variables",
+      "scope": ["meta.block variable.other"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan block vars, TS scope
+      }
+    },
+    {
+      "name": "Other Variable, String Link",
+      "scope": ["support.other.variable", "string.other.link"],
+      "settings": {
+        "foreground": "#F57C00" // Darkest amber links, warm pop
+      }
+    },
+    {
+      "name": "Number, Constant, Embedded",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "support.constant",
+        "constant.character",
+        "constant.escape",
+        "keyword.other.unit",
+        "keyword.other"
+      ],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan constants, clear
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "scope": [
+        "string",
+        "constant.other.symbol",
+        "constant.other.key",
+        "entity.other.inherited-class",
+        "markup.heading",
+        "markup.inserted.git_gutter",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red strings, vibrant
+      }
+    },
+    {
+      "name": "Class, Support (TS Classes)",
+      "scope": [
+        "entity.name",
+        "support.type",
+        "support.class",
+        "support.other.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "markup.changed.git_gutter",
+        "support.type.sys-types"
+      ],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan classes, Angular components
+      }
+    },
+    {
+      "name": "Entity Types",
+      "scope": ["support.type"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan types, TS precision
+      }
+    },
+    {
+      "name": "CSS Class and Support (Angular Styles)",
+      "scope": [
+        "source.css support.type.property-name",
+        "source.sass support.type.property-name",
+        "source.scss support.type.property-name",
+        "source.less support.type.property-name",
+        "source.stylus support.type.property-name",
+        "source.postcss support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#00A843" // Darkest brighter green CSS, vivid styles
+      }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": [
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js"
+      ],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink sub-methods, pink flair
+      }
+    },
+    {
+      "name": "Language methods",
+      "scope": ["variable.language"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#FF8F00" // Darkest brighter amber lang vars, warm pop
+      }
+    },
+    {
+      "name": "entity.name.method.js",
+      "scope": ["entity.name.method.js"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#D81B60" // Darkest brighter pink-red JS methods, wild
+      }
+    },
+    {
+      "name": "meta.method.js",
+      "scope": [
+        "meta.class-method.js entity.name.function.js",
+        "variable.function.constructor"
+      ],
+      "settings": {
+        "foreground": "#D81B60" // Darkest brighter pink-red constructors, contrast
+      }
+    },
+    {
+      "name": "Attributes (HTML Attributes in Angular)",
+      "scope": ["entity.other.attribute-name"],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan attributes, clear
+      }
+    },
+    {
+      "name": "HTML Attributes",
+      "scope": [
+        "text.html.basic entity.other.attribute-name.html",
+        "text.html.basic entity.other.attribute-name"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#007D34" // Darkest green HTML attributes, vivid
+      }
+    },
+    {
+      "name": "CSS Classes",
+      "scope": ["entity.other.attribute-name.class"],
+      "settings": {
+        "foreground": "#00A843" // Darkest brighter green CSS classes, styles pop
+      }
+    },
+    {
+      "name": "CSS ID's",
+      "scope": ["source.sass keyword.control"],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink IDs, pink accent
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": ["markup.inserted"],
+      "settings": {
+        "foreground": "#007D34" // Darkest green inserts, fresh
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": ["markup.deleted"],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red deletes, vibrant
+      }
+    },
+    {
+      "name": "Changed",
+      "scope": ["markup.changed"],
+      "settings": {
+        "foreground": "#F57C00" // Darkest amber changes, warm
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan regex, TS precision
+      }
+    },
+    {
+      "name": "Escape Characters",
+      "scope": ["constant.character.escape"],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan escapes, clear
+      }
+    },
+    {
+      "name": "URL",
+      "scope": ["*url*", "*link*", "*uri*"],
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#F57C00" // Darkest amber URLs, warm pop
+      }
+    },
+    {
+      "name": "Decorators (Angular Decorators)",
+      "scope": [
+        "tag.decorator.js entity.name.tag.js",
+        "tag.decorator.js punctuation.definition.tag.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#D81B60" // Darkest brighter pink-red decorators, wild contrast
+      }
+    },
+    {
+      "name": "ES7 Bind Operator",
+      "scope": [
+        "source.js constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#C2185B" // Darkest rich pink-red bind ops, pink flair
+      }
+    },
+    {
+      "name": "Object Key - General",
+      "scope": [
+        "meta.objectliteral meta.object.member",
+        "variable.object.property",
+        "support.type.property-name",
+        "meta.object-literal.key"
+      ],
+      "settings": {
+        "foreground": "#00A843" // Darkest brighter green keys, distinct
+      }
+    },
+    {
+      "name": "Object Value",
+      "scope": [
+        "meta.objectliteral meta.object.member string",
+        "meta.objectliteral meta.object.member constant",
+        "meta.objectliteral meta.object.member variable"
+      ],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red values, high contrast
+      }
+    },
+    {
+      "name": "JSON Key - Level 0",
+      "scope": [
+        "source.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#00A843" // Darkest brighter green JSON keys, distinct
+      }
+    },
+    {
+      "name": "JSON Value - Level 0",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json"
+      ],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red JSON values, contrast
+      }
+    },
+    {
+      "name": "JSON Key - Level 1",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan, depth
+      }
+    },
+    {
+      "name": "JSON Key - Level 2",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#F57C00" // Darkest amber, vivid
+      }
+    },
+    {
+      "name": "JSON Key - Level 3",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#007D34" // Darkest green, fresh
+      }
+    },
+    {
+      "name": "JSON Key - Level 4",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink, pink accent
+      }
+    },
+    {
+      "name": "JSON Key - Level 5",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#D81B60" // Darkest brighter pink-red, wild
+      }
+    },
+    {
+      "name": "JSON Key - Level 6",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#00A843" // Darkest brighter green, vivid
+      }
+    },
+    {
+      "name": "JSON Key - Level 7",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#0288D1" // Darkest pale cyan, shimmering
+      }
+    },
+    {
+      "name": "JSON Key - Level 8",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FF8F00" // Darkest brighter amber, warm pop
+      }
+    },
+    {
+      "name": "Markup - Plain (Angular Template Text)",
+      "scope": [
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown"
+      ],
+      "settings": {
+        "foreground": "#1A0F26" // Even darker purple template text, stark
+      }
+    },
+    {
+      "name": "Markup - Raw Inline",
+      "scope": ["text.html.markdown markup.inline.raw.markdown"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan inline, glowing
+      }
+    },
+    {
+      "name": "Markup - Raw Inline Punctuation",
+      "scope": [
+        "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
+      ],
+      "settings": {
+        "foreground": "#7E57C2" // Darker muted purple-gray punctuation
+      }
+    },
+    {
+      "name": "Markup - Heading",
+      "scope": [
+        "markdown.heading",
+        "markup.heading | markup.heading entity.name",
+        "markup.heading.markdown punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink headings, pink power
+      }
+    },
+    {
+      "name": "Markup - Italic",
+      "scope": ["markup.italic"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#007D34" // Darkest green italics, vivid
+      }
+    },
+    {
+      "name": "Markup - Bold",
+      "scope": ["markup.bold", "markup.bold string"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#F57C00" // Darkest amber bold, warm pop
+      }
+    },
+    {
+      "name": "Markup - Bold-Italic",
+      "scope": [
+        "markup.bold markup.italic",
+        "markup.italic markup.bold",
+        "markup.quote markup.bold",
+        "markup.bold markup.italic string",
+        "markup.italic markup.bold string",
+        "markup.quote markup.bold string"
+      ],
+      "settings": {
+        "fontStyle": "bold italic",
+        "foreground": "#FF8F00" // Darkest brighter amber bold-italic, vivid
+      }
+    },
+    {
+      "name": "Markup - Underline",
+      "scope": ["markup.underline"],
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#D81B60" // Darkest brighter pink-red underline, wild contrast
+      }
+    },
+    {
+      "name": "Markup - Blockquote",
+      "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
+      "settings": {
+        "foreground": "#7E57C2" // Darker muted purple-gray blockquote
+      }
+    },
+    {
+      "name": "Markup - Quote",
+      "scope": ["markup.quote"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#C2185B" // Darkest rich pink-red quotes, vibrant
+      }
+    },
+    {
+      "name": "Markup - Link",
+      "scope": ["string.other.link.title.markdown"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan links, glowing
+      }
+    },
+    {
+      "name": "Markup - Link Description",
+      "scope": ["string.other.link.description.title.markdown"],
+      "settings": {
+        "foreground": "#F57C00" // Darkest amber descriptions, warm
+      }
+    },
+    {
+      "name": "Markup - Link Anchor",
+      "scope": ["constant.other.reference.link.markdown"],
+      "settings": {
+        "foreground": "#0277BD" // Darkest brighter cyan anchors
+      }
+    },
+    {
+      "name": "Markup - Raw Block",
+      "scope": ["markup.raw.block"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan raw blocks, electric
+      }
+    },
+    {
+      "name": "Markup - Raw Block Fenced",
+      "scope": ["markup.raw.block.fenced.markdown"],
+      "settings": {
+        "foreground": "#007D34" // Darkest green fences, vivid
+      }
+    },
+    {
+      "name": "Markup - Fenced Code Block",
+      "scope": ["punctuation.definition.fenced.markdown"],
+      "settings": {
+        "foreground": "#C2185B" // Darkest rich pink-red fences, pink flair
+      }
+    },
+    {
+      "name": "Markup - Fenced Code Block Variable",
+      "scope": [
+        "markup.raw.block.fenced.markdown",
+        "variable.language.fenced.markdown",
+        "punctuation.section.class.end"
+      ],
+      "settings": {
+        "foreground": "#1A0F26" // Even darker purple fenced vars, stark
+      }
+    },
+    {
+      "name": "Markup - Fenced Language",
+      "scope": ["variable.language.fenced.markdown"],
+      "settings": {
+        "foreground": "#AD1457" // Darkest deep pink lang tags, pink accent
+      }
+    },
+    {
+      "name": "Markup - Separator",
+      "scope": ["meta.separator"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#F57C00" // Darkest amber separators, warm
+      }
+    },
+    {
+      "name": "Markup - Table",
+      "scope": ["markup.table"],
+      "settings": {
+        "foreground": "#01579B" // Darkest deep cyan tables, glowing grids
+      }
+    }
+  ]
+}
